@@ -1,0 +1,43 @@
+{
+  "deadlock_livelock": {
+    "resources": {
+      "r1": {
+        "name": "Resource 1"
+      },
+      "r2": {
+        "name": "Resource 2"
+      }
+    },
+    "processes": [
+      {
+        "name": "Process 1",
+        "resource1": "r1",
+        "resource2": "r2"
+      },
+      {
+        "name": "Process 2",
+        "resource1": "r2",
+        "resource2": "r1"
+      }
+    ]
+  },
+  "starvation": {
+    "resources": {
+      "r1": {
+        "name": "Resource 1"
+      }
+    },
+    "processes": [
+      {
+        "name": "Process 1",
+        "resource": "r1",
+        "priority": 1
+      },
+      {
+        "name": "Process 2",
+        "resource": "r1",
+        "priority": 2
+      }
+    ]
+  }
+}
